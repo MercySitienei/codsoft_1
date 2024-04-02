@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 55px;
+}
+body{
+    background-color: rgb(16, 24, 65);
+    color: white;
+    font-family: "Merriweather", serif;
+    max-width: 1440px;
+}
+span{
+    color: rgb(65, 185, 224);
+}
+header,
+main{
+    margin: 20px;
+}
+.navigation{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+
+}
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    background-color: rgba(16, 24, 65, 0.9);
+}
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.navigation li a:hover{
+    color: aqua;
+}
+header h1,
+header p{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 40px;
+
+}
+header{
+    margin-top: 80px;
+}
+header p{
+    font-size: 20px;
+}
+
+/* About section */
+.about{
+    display: flex;
+    flex-direction: column;
+    
+}
+.about img{
+    width: 230px;
+    height: 230px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid rgb(65, 185, 224);
+    margin-top: 55px;
+}
+.about-me{
+    padding-top: 60px;
+    margin-top: 25px;
+}
+.about-me p{
+    font-size: 20px;
+    padding: 34px 0 60px 0;
+    text-align: center;
+}
+.about-me h1,
+.about-me h2,
+.about-me h3{
+    text-align: center;
+
+}
+.about-me li{
+    list-style-position: inside;
+    padding-top: 12px;
+}
+.about-me ul{
+    padding-bottom: 70px;
+}
+/* skills section */
+.my-skills{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 40px;
+}
+.skills h1{
+    text-align: center;
+    padding: 60px;
+}
+.fa-brands{
+    color: rgb(65, 185, 224);
+}
+.skills-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+/* projects */
+.projects h1,
+.contact h1{
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+.law-firm-project{
+    background-image: url(images/lawfirmSiteProject.png);
+}
+.nft-project{
+    background-image: url(images/nftProject.png);
+}
+.qr-project{
+    background-image: url(images/qrCodeProject.png);
+}
+.project-info{
+    height: 300px;
+    width: 95vw;
+    max-width: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 15px;
+    margin-bottom: 70px;
+}
+.my-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-info::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+.my-projects h3{
+    position: relative;
+    z-index: 1;
+    padding-left: 20px;
+    font-size: 30px;
+}
+.my-projects li{
+    list-style: none;
+    background-color: rgb(16, 24, 65);
+    padding: 10px;
+    border-radius: 10px;
+}
+.my-projects ul{
+    display: flex;
+    padding: 10px 20px;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: hsla(178, 100%, 20%, 0.5);
+    border-radius: 15px;
+    transition: .3s ease;
+    width: 95vw;
+    max-width: 550px;
+    height: 300px;
+}
+.project-container:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+.project-container:hover h3,
+.project-container:hover ul{
+    opacity: 0.3;
+}
+.project-container{
+    position: relative;
+}
+.overlay{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    
+}
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 85px 0 80px 0;
+}
+.download-resume{
+    height: 80px;
+    width: 350px;
+    border-radius: 15px;
+    border: 6px solid rgb(65, 185, 224);
+    background-color: rgb(16, 24, 65);
+}
+.download-resume:hover{
+    background-color: rgb(65, 185, 224);
+    font-size: 35px;
+}
+.download-resume a{
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+.download-resume i{
+    color: white;
+    padding-left: 10px;
+}
+
+/* contact section */
+.my-contact{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(10, 16, 44);
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+}
+.contact-me{
+    display: flex;
+    flex-direction: column;
+}
+.my-contact i{
+    color: rgb(65, 185, 224);
+
+}
+.my-contact a,
+.phone p{
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 20px;
+    font-weight: 600;
+    color: white;
+}
+.email p{
+    font-size: 22px;
+    padding-left: 20px;
+    font-weight: 400;
+}
+.my-contact:hover{
+    font-size: larger;
+    background-color: rgb(47, 63, 135);
+}
+/* footer */
+footer{
+    text-align: center;
+    border-top: 1px solid white;
+    margin: 70px 0;
+}
+.copyright{
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+/* media q */
+
+@media (min-width: 601px) and (max-width: 900px){
+    .navigation li a:hover{
+        font-size: 45px;
+    }
+    
+    .navigation li a{
+        font-size: 22px;
+    }
+
+    .my-skills{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 80px;
+    }
+    
+}
+@media (min-width: 901px){
+    .navigation li a:hover{
+        font-size: 45px;
+    }
+    
+    .navigation li a{
+        font-size: 42px;
+        padding: 16px;
+    }
+
+    .my-skills{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+    .my-projects{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .project-info{
+        height: 300px;
+        width: 28vw;
+        max-width: 400px;
+    }
+    .overlay {
+        width: 28vw;
+        max-width: 400px;
+        height: 300px;
+    }
+    .contact-me{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5vw;
+    }
+}
+@media (max-width: 450px){
+    .email p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .phone p{
+        font-size: 15px;
+    }
+    .navigation li a{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    
+
+}
+
+
+
+
