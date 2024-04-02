@@ -14,8 +14,8 @@ This is my personal portfolio, featuring my skills, work samples, contact detail
 
 # Links
 
-- Solution URL: https://github.com/MercySitienei/nft-preview-card-component.git
-- Live Site URL: https://mercysitienei.github.io/nft-preview-card-component/
+- github URL: https://github.com/MercySitienei/codsoft_1.git
+- Live Site URL: https://mercysitienei.github.io/codsoft_1/
 
 # Built with
 
