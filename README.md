@@ -14,8 +14,8 @@ This is my personal portfolio, featuring my skills, work samples, contact detail
 
 # Links
 
-- github URL: https://github.com/MercySitienei/codsoft_1.git
-- Live Site URL: https://mercysitienei.github.io/codsoft_1/
+- github URL: https://github.com/MercySitienei/myportfolio.git
+- Live Site URL: https://mercysitienei.github.io/myportfolio/
 
 # Built with
 
